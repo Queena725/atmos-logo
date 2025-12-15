@@ -1,0 +1,104 @@
+body {
+  background: #ffffff;
+  margin: 0;
+  display: block;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+#weather-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 100px auto;
+margin-top: 120px;  
+  margin-bottom: 160px;
+  padding: 20px;
+
+
+   column-gap: 40px;  
+  row-gap: 100px;    
+
+}
+
+.weatherEntry {
+  width: 120px;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  position: relative;
+}
+
+.atmosLogo {
+  width: 100%;
+  height: auto;
+  opacity: 0.4;
+  transition: opacity 0.8s ease, transform 0.6s ease;
+}
+
+.label {
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  width: 100%;
+  font-size: 9px;
+
+}
+
+#control-panel {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+}
+
+#todayLogoBtn {
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#todayLogoBtn:hover {
+  background: #ffffff;
+}
+
+
+.article-info {
+  
+  max-width: 320px;      
+  padding: 12px 16px;   
+
+  font-size: 11px;       
+  line-height: 1.4;
+  
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+
+  position: absolute;    /* 필요 없으면 지워도 돼 */
+  right: 40px;           /* 원하는 위치로 조절 */
+  bottom: 40px;
+}
+.article-info p {
+  margin: 0 0 6px;
+}
+.article-info strong {
+  font-size: 13.5px;
+}
